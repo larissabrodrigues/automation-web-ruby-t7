@@ -7,4 +7,6 @@ module Helper
     screenshots = "#{file_path}/#{date}/#{hour}/#{file_name}.png"
     page.save_screenshot(screenshots)
     attach(screenshots, 'image/png')
+    
+    end
 end
