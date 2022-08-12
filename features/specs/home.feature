@@ -1,11 +1,8 @@
-
 #language: pt
 
-#Plano de Teste
 Funcionalidade: Home Page
 
-Cenario: Carregar Home Page
+Cenario: Acessar home page
 
-Dado que eu acesse a Home Page
-Quando a página é carregada
-Então visualizo a informação "Aprenda na prática"
+Dado que eu acesse a home page do projeto Qa.Coders
+Então devo visualizar a informação "Aprenda na prática."
