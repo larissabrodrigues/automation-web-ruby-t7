@@ -13,3 +13,5 @@ end
 Quando('clico no menu {string}') do |sobre_nos|
   home.click_button(sobre_nos)
 end
+
+

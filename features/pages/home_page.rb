@@ -5,9 +5,9 @@ class Home < SitePrism::Page
 
     element :title_Aprenda_Na_Pratica, 'div[class="title"]'
     element :btn_Sobre_Nos, 'a[href="/#sobre-nos"]'
-    element :btn_Depoimentos, 'a[href="/depoimentos"]'
-    element :btn_Parceiros, 'a[href="/parceiros"]'
-    element :btn_Fale_Conosco, 'a[href="/fale-conosco"]'
+    element :btn_Depoimentos, 'a[href="/#depoimentos"]'
+    element :btn_Parceiros, 'a[href="/#parceiros"]'
+    element :btn_Fale_Conosco, 'a[href="/#fale-conosco"]'
 
     set_url '/'
 
@@ -22,6 +22,11 @@ class Home < SitePrism::Page
     # end
 
     def click_button(sobre_nos)
+        btn_Sobre_Nos.click()
+
+    end 
+
+    def click_button(depoimentos)
         btn_Sobre_Nos.click()
 
     end 
