@@ -1,4 +1,3 @@
-
 class Home < SitePrism::Page
     include RSpec::Matchers
     include Capybara::DSL
@@ -12,24 +11,12 @@ class Home < SitePrism::Page
     set_url '/'
 
     
-    
-    # def validate_text_homePage(titleHomePage)
-    #     el_title_HomePage = find('div[class="title"]')
-      
-    #     if el_title_HomePage.text.eql?(titleHomePage) != true
-    #         raise "Expect element: #{titleHomePage}, but returned: #{el_title_HomePage.text}"
-    #     end
-    # end
 
     def click_button(sobre_nos)
         btn_Sobre_Nos.click()
 
     end 
 
-    def click_button(depoimentos)
-        btn_Sobre_Nos.click()
-
-    end 
 
     def validate_text_home(text_home_feature)
           
